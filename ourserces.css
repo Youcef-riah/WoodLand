@@ -1,0 +1,56 @@
+
+:root{
+    --primary-brown:#BA9E76;
+    --dark-brown:#342F2C;
+    --light-brown:#ECE5D3;
+    --creamy-brown:#FFFBEF;
+--primary-font:'optic-font','Montserrat',sans-serif;
+--text-font:'Montserrat',sans-serif
+}
+
+
+.bg-pic {
+    right: 0;
+    width: 60%;
+    background-image: url('assetes/Frame\ 29.jpg');
+    height: 824px;
+    z-index: 3;
+  }
+.bg-svg{
+    right: 0;
+    width: 60%;
+    color: black;
+    
+}
+.text-container{
+    margin-right: 100px;
+}
+.images-container img{
+    border-radius:40px ;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: header-text; }
+.item3 { grid-area: pics; }
+.item4 { grid-area: value1; }
+.item4 { grid-area: value2; }
+.item4 { grid-area: value3; }
+.item4 { grid-area: value4; }
+
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    'header header header header header-text header-text'
+    'pics pics value1 value2 '
+    ' pics pics value3 value4 ';
+    grid-gap: 10px;
+   
+    color: #444;
+
+    padding: 10px;
+  }
+  .grid-container > div {
+    padding: 20px 0;
+    font-size: 30px;
+}
