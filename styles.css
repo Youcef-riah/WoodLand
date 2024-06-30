@@ -94,7 +94,7 @@ body {
     margin:0  30px;
     
    background-color: var(--creamy-brown);
-   height: 90px;
+   height: 95px;
    width: 200px;
    align-items: center;
    text-align: center;
@@ -114,13 +114,14 @@ body {
     } 
    
   .navbar-nav li {
-    margin: 0 20px; /* Adjust margin as needed */
+    margin: 0 90px; /* Adjust margin as needed */
     height: 100%;
     display: flex;
     align-items: center; /* Center the link vertically */
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
   }
   .navbar-nav li a {
+    padding: 80px 0;
     display: block;
     padding: 30px 10px; /* Adjust padding to cover full height */
     text-decoration: none;
