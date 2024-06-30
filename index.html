@@ -3,29 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
   
 
-        <header>
-            <nav>
-              <a href="index.html">Home</a>
-              <a href="ourservices.html">About Us</a>
-              <div class="logo-container">
-                <img src="assetes/logo.svg" alt="Logo" id="logo">
-              </div>
-              <a href="#ourproject">Our Project</a>
-              <a href="#contact">Contact</a>
-            </nav>
-          </header>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand d-lg-none" href="#"><img src="assetes/logo.svg" alt="" srcset=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                       <div class="push"> <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </div>  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=ourservices.html>AboutUs</a>
+                    </li>
+            <a class="navbar-brand" href="#"><img src="assetes/logo.svg" alt="" srcset=""></a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">OurProjects </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       
         
      <section id="hero">
         <div class="bg-svg"></div>
         <div class="bg-pic"></div>
-        <div class="container">
+        <div class="animation-contain container">
 
             <h1>elevate your home with <br> exquisite wood fornutire</br></h1>
             <div class="line-breaker"></div>
@@ -38,20 +56,20 @@
             </div>
     </section>
 <div class="slide-image">
-    <button><img class="svgs" src="assetes/lounge.svg" alt="" srcset="">lounge</button>
-    <button><img class="svgs" src="assetes/dinningRoom.svg" alt="" srcset="">dining room</button>
-    <button><img class="svgs" src="assetes/office.svg" alt="" srcset="">office</button>
-    <button><img class="svgs" src="assetes/bedroom.svg" alt="" srcset="">bedroom</button>
+    <button class="button" data-background="background-1" onmouseover="changeBackground('lounge')"><img class="svgs" src="assetes/lounge.svg" alt="" srcset="">lounge</button>
+    <button class="button" data-background="background-2" onmouseover="changeBackground('dinningRoom')"><img class="svgs" src="assetes/dinningRoom.svg" alt="" srcset="">dining room</button>
+    <button class="button" data-background="background-3" onmouseover="changeBackground('office')"><img class="svgs" src="assetes/office.svg" alt="" srcset="">office</button>
+    <button class="button" data-background="background-4" onmouseover="changeBackground('bedroom')"><img class="svgs" src="assetes/bedroom.svg" alt="" srcset="">bedroom</button>
 </div>
 
 <section id="image-section">
     <div class="image-section-content">
 
-        <div class="images-container">
+        <div class="image-animation images-container">
             <img class="img1" src="assetes/aboutus1.jpg" alt="about us">
             <img src="assetes/aboutus2.jpg" alt="about us">
         </div>
-        <div class="text-container">
+        <div class="text-animation text-container">
             <h2>about us</h2>
             <div class="square"></div>  
         <h1>our history of <br> making the best <br>wood product </h1>
@@ -130,7 +148,7 @@
 <section id="image-section">
     <div class="image-section-content">
 
-        <div class="text-container">
+        <div class="text-animation text-container">
             
             <h2>costumized request</h2>
             <h1>create Furniture as unique as you are</h1>
@@ -140,7 +158,7 @@
                  At urna adipiscing commodo </p>
             <button class="cta">send request</button>
         </div>
-        <div class="images-container images-container1"> 
+        <div class="images-container images-container1 image-animation"> 
             <img src="assetes/costum1.jpg" alt="" srcset="">
             <img class="img2" src="assetes/costum2.jpg" alt="" srcset="">
         </div>
@@ -152,18 +170,51 @@
 </section>-->
 <!--<section class="testimonials">
 <h2>testimonials</h2>    -->
-<h1>listen to our customer</h1>
-<div></div>
-<div></div>
-<div></div>
+
 </section>
+ <footer class="footer animation-contain">
+    <div class="containers">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <img src="assetes/logo.svg" alt="Logo" width="100">
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut feugiat libero.</p>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-grid">
+         
+          <div class="footer-grid-item">
+            <h4>Contact</h4>
+            <ul>
+              <li>Address: 123 Street, City</li>
+              <li>Phone: +1 234 567 890</li>
+              <li>Email: info@example.com</li>
+            </ul>
+          </div>
+          <div class="footer-grid-item">
+            <h4>Work Time</h4>
+            <p>Mon - Fri: 9:00 AM - 5:00 PM</p>
+          </div>
+          <div class="footer-grid-item">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="footer-grid-item">
+            <h4>Contact Links</h4>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-   
-    <footer>
-
-    </footer>
-  
-    <button onclick="scrollToTop()" class="scrolltop">Top</button>
+    <button onclick="scrollToTop()" class="scrolltop"><img src="assetes/Arrow 1.svg" alt="" srcset=""></button>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
 </body>
 </html>
